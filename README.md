@@ -2,7 +2,7 @@
 
 Develop a Prototype of a Website using Bootstrap 4
 
-![Bootstrap_4](aqui)
+![Bootstrap_4](https://github.com/davidgm17/p4_Bootstrap/blob/master/src/resources/img/bootstrap-logo.png)
 
 # Introduction
 
