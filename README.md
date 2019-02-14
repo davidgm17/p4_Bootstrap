@@ -33,9 +33,9 @@ As you surely remember, the pages that you created in your mockup were:
     
 4.  Page of a product
     
-5.  Cookies Policy Page
+~~5.  Cookies Policy Page~~
     
-6.  About Page
+~~6.  About Page~~
     
 7.  Login/Register Page
     
@@ -44,7 +44,7 @@ As you surely remember, the pages that you created in your mockup were:
 
   
 
-You do not have to implement the pages that have been crossed out !
+You do not have to implement the pages that have been ~~crossed out~~ !
 
 You have to use at least once in your prototype every one of these graphical elements:
 
