@@ -1,57 +1,119 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bootstrap_4</title>
+    <link
+      rel="shortcut icon"
+      href="./resources/img/bleach.jpg"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="resources/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="resources/scss/styles.scss"
+    />
+  </head>
 
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bootstrap_4</title>
-        <link rel="shortcut icon" href="./resources/img/bleach.jpg" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="resources/css/bootstrap.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-            crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" media="screen" href="resources/scss/styles.scss" />
-    </head>
+  <body>
+    <!-- Cabecera Movil -->
 
-    <body>
-        <!-- Cabecera Movil -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-pal4 align-middle justify-content-around  "
+    >
+      <a class="navbar-brand h1 align-middle m-0 mx-lg-2" href="#">
+        <img
+          src="https://source.unsplash.com/random"
+          class="d-inline-block align-middle img-logo-mvl"
+          alt="logo"
+        />
+        Garbag
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="https://source.unsplash.com/random" class="d-inline-block align-top img-logo-mvl" alt="logo">
-                Bootstrap
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div
+        class="collapse navbar-collapse d-flex justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <form class="form-inline my-2 my-lg-0 mx-lg-2">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-                </form>
-                <ul class="navbar-nav mr-auto">
+        <!-- Boton collapse para hacer login -->
 
+        <div class="collapse mx-lg-2" id="loginCollapse">
+          <div class="card card-body p-1">
+            <form class="form-inline my-2 my-lg-0 mx-lg-2">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="User-Name"
+                aria-label="Search"
+              />
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Password"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark  my-2 my-sm-0 " type="submit">
+                Sign-in
+              </button>
+            </form>
+          </div>
+        </div>
+        <button
+          class="btn btn-outline-dark"
+          type="button"
+          data-toggle="collapse"
+          data-target="#loginCollapse"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Login
+        </button>
+        <!--boton de la cesta-->
 
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">aqui carrito</a>
-                    </li>
-                </ul>
+        <ul class="navbar-nav mr-auto mr-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link " href="#"><i class="fas fa-box fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-            </div>
-        </nav>
+    <!-- Cabecera termina aqui -->
 
-        <!-- Cabecera termina aqui -->
-
-
-        <script src="resources/js/jquery.min.js"></script>
-        <!-- <script src="resources/js/popper.js"></script> -->
-        <script src="resources/js/bootstrap.bundle.min.js"></script>
-    </body>
-
+    <script src="resources/js/jquery.min.js"></script>
+    <!-- <script src="resources/js/popper.js"></script> -->
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

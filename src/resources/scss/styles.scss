@@ -1,7 +1,25 @@
-$paleta-1:#1b0c90;
-$paleta-2:#900c3f;
-$paleta-3:#81900c;
-$paleta-4:#0c905d;
+$paleta1-1:#1b0c90;
+$paleta1-2:#900c3f;
+$paleta1-3:#81900c;
+$paleta1-4:#0c905d;
+
+$paleta-1:#e6f5f6;
+$paleta-2:#ccd8d6;
+$paleta-3:#8c8e8e;
+$paleta-4:#f2f6f5;
+
+.bg-pal1{
+    background-color:$paleta-1;
+}
+.bg-pal2{
+    background-color:$paleta-2;
+}
+.bg-pal3{
+    background-color:$paleta-3;
+}
+.bg-pal4{
+    background-color:$paleta-4;
+}
 .h1 {
     font-size: 32px;
 }
@@ -90,4 +108,13 @@ $paleta-4:#0c905d;
 .img-random {
     background-image: url('https://source.unsplash.com/random');
     background-size: cover;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:$paleta-1;
 }
