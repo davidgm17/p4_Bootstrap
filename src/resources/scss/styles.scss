@@ -8,18 +8,22 @@ $paleta-2:#ccd8d6;
 $paleta-3:#8c8e8e;
 $paleta-4:#f2f6f5;
 
-.bg-pal1{
-    background-color:$paleta-1;
+.bg-pal1 {
+    background-color: $paleta-1;
 }
-.bg-pal2{
-    background-color:$paleta-2;
+
+.bg-pal2 {
+    background-color: $paleta-2;
 }
-.bg-pal3{
-    background-color:$paleta-3;
+
+.bg-pal3 {
+    background-color: $paleta-3;
 }
-.bg-pal4{
-    background-color:$paleta-4;
+
+.bg-pal4 {
+    background-color: $paleta-4;
 }
+
 .h1 {
     font-size: 32px;
 }
@@ -109,12 +113,45 @@ $paleta-4:#f2f6f5;
     background-image: url('https://source.unsplash.com/random');
     background-size: cover;
 }
-body,html{
+
+body,
+html {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
 }
-body{
-    background-color:$paleta-1;
+
+body {
+    background-color: $paleta-1;
+}
+
+
+/** IPAD */
+@media (max-width: 993.98px) {
+    .nav-mvl {
+
+        .btn-nav {
+            display: block;
+            width: 100%;
+        }
+
+        .input-nav-search {
+            width: 100%;
+        }
+
+        .input-nav-login {
+            width: 50%;
+        }
+    }
+}
+
+
+/** MOVIL */
+@media (max-width: 767.98px) {
+    .nav-mvl {
+        .input-nav-login {
+            width: 100%;
+        }
+    }
 }

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <html lang="en">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Bootstrap_4</title>
     <link
       rel="shortcut icon"
@@ -29,7 +31,7 @@
     <!-- Cabecera Movil -->
 
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-pal4 align-middle justify-content-around  "
+      class="navbar navbar-expand-lg navbar-light bg-pal4 align-middle justify-content-around nav-mvl "
     >
       <a class="navbar-brand h1 align-middle m-0 mx-lg-2" href="#">
         <img
@@ -52,17 +54,17 @@
       </button>
 
       <div
-        class="collapse navbar-collapse  justify-content-end"
+        class="collapse navbar-collapse  justify-content-end visible"
         id="navbarSupportedContent"
       >
         <form class="form-inline my-2 my-lg-0 mx-lg-2">
           <input
-            class="form-control mr-sm-2"
+            class="form-control my-md-2 input-nav-search"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+          <button class="btn btn-outline-dark my-2 my-sm-0 btn-nav" type="submit">
             Search
           </button>
         </form>
@@ -73,25 +75,28 @@
           <div class="card card-body p-1">
             <form class="form-inline my-2 my-lg-0 mx-lg-2">
               <input
-                class="form-control mr-sm-2"
+                class="form-control my-2 input-nav-login"
                 type="search"
                 placeholder="User-Name"
                 aria-label="Search"
               />
               <input
-                class="form-control mr-sm-2"
+                class="form-control  my-2 input-nav-login"
                 type="search"
                 placeholder="Password"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-dark  my-2 my-sm-0 " type="submit">
+              <button
+                class="btn btn-outline-dark  my-2 my-sm-0  btn-nav"
+                type="submit"
+              >
                 Sign-in
               </button>
             </form>
           </div>
         </div>
         <button
-          class="btn btn-outline-dark my-2"
+          class="btn btn-outline-dark my-2 btn-lg-sm btn-nav"
           type="button"
           data-toggle="collapse"
           data-target="#loginCollapse"
