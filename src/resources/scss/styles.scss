@@ -3,10 +3,10 @@ $paleta1-2: #900c3f;
 $paleta1-3: #81900c;
 $paleta1-4: #0c905d;
 
-$paleta-1: #e6f5f6;
-$paleta-2: #ccd8d6;
-$paleta-3: #8c8e8e;
-$paleta-4: #f2f6f5;
+$paleta-1: #f3ca77;
+$paleta-2: #d6b779;
+$paleta-3: #ab9b7c;
+$paleta-4: #8e897e;
 
 .bg-pal1 {
   background-color: $paleta-1;
@@ -117,6 +117,7 @@ $paleta-4: #f2f6f5;
   background-image: url('https://source.unsplash.com/collections/879042');
   background-size: cover;
 }
+
 html {
   padding: 0px;
 }
@@ -129,7 +130,7 @@ html {
 }
 
 body {
-  background-color: $paleta-1;
+  // background-color: $paleta-1;
   padding-top: 60px;
 }
 
