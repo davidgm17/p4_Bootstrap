@@ -1,399 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Bootstrap_4</title>
-    <link rel="shortcut icon" href="./resources/img/bleach.jpg" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="resources/css/bootstrap.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" media="screen" href="resources/scss/styles.scss" />
-</head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Bootstrap_4</title>
+        <link rel="shortcut icon" href="./resources/img/bleach.jpg" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="resources/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" media="screen" href="resources/scss/styles.scss" />
+    </head>
 
-<body>
-    <!-- Cabecera Movil -->
+    <body>
+        <!-- Cabecera Movil -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-pal4 align-middle justify-content-around nav-mvl fixed-top">
-        <a class="navbar-brand h1 align-middle m-0 mx-lg-2" href="#">
-            <img src="https://source.unsplash.com/random" class="d-inline-block align-middle img-logo-mvl" alt="logo" /> Garbag
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-pal4 align-middle justify-content-around nav-mvl fixed-top">
+            <a class="navbar-brand h1 align-middle m-0 mx-lg-2" href="#">
+                <img src="https://source.unsplash.com/random" class="d-inline-block align-middle img-logo-mvl" alt="logo" />
+                Garbag
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse  justify-content-end visible" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0 mx-lg-2">
-                <input class="form-control my-md-2 input-nav-search" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-dark my-2 my-sm-0 btn-nav" type="submit">
-            Search
-          </button>
-            </form>
+            <div class="collapse navbar-collapse  justify-content-end visible" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0 mx-lg-2">
+                    <input class="form-control my-md-2 input-nav-search" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-dark my-2 my-sm-0 btn-nav" type="submit">
+                        Search
+                    </button>
+                </form>
 
-            <!-- Boton collapse para hacer login -->
+                <!-- Boton collapse para hacer login -->
 
-            <div class="collapse mx-lg-2" id="loginCollapse">
-                <div class="card card-body p-1">
-                    <form class="form-inline my-2 my-lg-0 mx-lg-2">
-                        <input class="form-control my-2 input-nav-login" type="search" placeholder="User-Name" aria-label="Search" />
-                        <input class="form-control  my-2 input-nav-login" type="search" placeholder="Password" aria-label="Search" />
-                        <button class="btn btn-outline-dark  my-2 my-sm-0  btn-nav" type="submit">
-                Sign-in
-              </button>
-                    </form>
+                <div class="collapse mx-lg-2" id="loginCollapse">
+                    <div class="card card-body p-1">
+                        <form class="form-inline my-2 my-lg-0 mx-lg-2">
+                            <input class="form-control my-2 input-nav-login" type="search" placeholder="User-Name"
+                                aria-label="Search" />
+                            <input class="form-control  my-2 input-nav-login" type="search" placeholder="Password"
+                                aria-label="Search" />
+                            <button class="btn btn-outline-dark  my-2 my-sm-0  btn-nav" type="submit">
+                                Sign-in
+                            </button>
+                        </form>
+                    </div>
                 </div>
+                <button class="btn btn-outline-dark my-2 btn-lg-sm btn-nav" type="button" data-toggle="collapse"
+                    data-target="#loginCollapse" aria-expanded="false" aria-controls="loginCollapse">
+                    Login
+                </button>
+                <!--boton de la cesta solo se muestra en escritorio-->
+
+                <ul class="navbar-nav mr-auto mr-lg-0 d-none d-lg-block">
+                    <li class="nav-item">
+                        <a class="nav-link " data-toggle="modal" data-target="#modalChartHead"><i class="fas fa-box fa-2x"></i></a>
+                    </li>
+                </ul>
             </div>
-            <button class="btn btn-outline-dark my-2 btn-lg-sm btn-nav" type="button" data-toggle="collapse" data-target="#loginCollapse" aria-expanded="false" aria-controls="loginCollapse">
-          Login
-        </button>
-            <!--boton de la cesta solo se muestra en escritorio-->
-
-            <ul class="navbar-nav mr-auto mr-lg-0 d-none d-lg-block">
-                <li class="nav-item">
-                    <a class="nav-link " data-toggle="modal" data-target="#modalChartHead"><i class="fas fa-box fa-2x"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Cabecera termina aqui -->
-
-    <!-- Modal carrito compra-->
-    <div class="modal fade " id="modalChartHead" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content ">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cesta</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                </div>
-                <div class="modal-body d-flex bg-pal1 ">
-
-                    <table class="table bg-pal1">
-                        <thead class=" bg-pal3 ">
-                            <tr>
-                                <th scope="col">Sel.</th>
-                                <th scope="col">Producto</th>
-                                <th scope="col">Referencia</th>
-                                <th scope="col">Precio</th>
-                            </tr>
-                        </thead>
-                        <tbody class=" bg-pal2">
-                            <tr>
-                                <th scope="row"><input type="checkbox" id="p1"></th>
-                                <td>Producto-1</td>
-                                <td id="p1">Referencia-1</td>
-                                <td>11.11</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><input type="checkbox" id="p2"></th>
-                                <td>Producto-2</td>
-                                <td id="p2">Referencia-2</td>
-                                <td>12.12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><input type="checkbox" id="p3"></th>
-                                <td>Producto-2</td>
-                                <td id="p3">Referencia-3</td>
-                                <td>11.11</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-secondary"> <a href="chart.html" class="text-light">Buy...</a></button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contenedor -->
-    <div class="jumbotron jumbotron-fluid pt-2 bg-pal1 ">
-
-        <!-- Breadcrum -->
-        <nav aria-label="breadcrumb border border-secondary rounded-bottom border-bottom bg-pal2">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Home</li>
-            </ol>
         </nav>
-        <!-- Fin breadcrum-->
-        <div class="d-flex p-0 m-0">
-            <!--contenido-->
-            <div class="col-12 col-md-8  p-2">
-                <!-- Producto destacado-->
-                <h2 class="border-bottom border-dark ">Productos destacados</h2>
-                <div class="d-flex p-2">
+        <!-- Cabecera termina aqui -->
 
-
-                    <!-- Carrusel categoria 1-->
-                    <div class="col-12 col-md-6 col-lg-4 text-center">
-                        <h3>Categoria-1</h3>
-                        <div id="carousel1" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel1" data-slide-to="1"></li>
-                                <li data-target="#carousel1" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
-
-                                        <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product-1</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="product.html" class="btn btn-outline-dark">product here</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
-
-                                        <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product-2</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="product.html" class="btn btn-outline-dark">product here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
-
-                                        <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product-3</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="product.html" class="btn btn-outline-dark">product here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
+        <!-- Modal carrito compra-->
+        <div class="modal fade " id="modalChartHead" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cesta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <!-- Carrusel categoria 2-->
-                    <div class="d-none d-md-block col-md-6 col-lg-4 text-center">
-                        <h3>Categoria-2</h3>
-                        <div id="carousel2" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel2" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel2" data-slide-to="1"></li>
-                                <li data-target="#carousel2" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+                    <div class="modal-body d-flex bg-pal1 ">
 
-                                        <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product-1</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="product.html" class="btn btn-outline-dark">product here</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
-
-                                        <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product-2</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="product.html" class="btn btn-outline-dark">product here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
-                                        <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product-3</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="product.html" class="btn btn-outline-dark">product here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Carrusel categoria 3-->
-                    <div class="d-none d-lg-block col-lg-4 text-center">
-                        <h3>Categoria-3</h3>
-                        <div id="carousel3" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel3" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel3" data-slide-to="1"></li>
-                                <li data-target="#carousel3" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
-                                        <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product-1</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="product.html" class="btn btn-outline-dark">product here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
-                                        <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product-2</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="product.html" class="btn btn-outline-dark">product here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
-                                        <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Product-3</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <a href="product.html" class="btn btn-outline-dark">product here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Promociones-->
-                <h2 class=" border-bottom border-dark my-2">Ofertas</h2>
-                <div class="d-flex p-4">
-                    <ul class="list-group bg-pal1 col-12 p-0">
-                        <li class="list-group-item d-flex justify-content-between align-items-center bg-pal3">
-                            <span class="col-6 col-sm-3">Producto</span>
-                            <span class="d-none d-sm-block col-3 ">Referencia</span>
-                            <span class="d-none d-sm-block col-2">Precio</span>
-                            <span class="col-4 col-sm-2">Oferta</span>
-                            <span class="col-2 ">Puntuación</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center bg-pal2">
-                            <span class="col-6 col-sm-3">Producto-2</span>
-                            <span class="d-none d-sm-block col-3">Referencia-2</span>
-                            <span class="d-none d-sm-block col-2">11.11</span>
-                            <span class="col-4 col-sm-2">9.99</span>
-                            <span class=" col-2 badge badge-light badge-pill">6</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center bg-pal2">
-                            <span class="col-6 col-sm-3">Producto-3</span>
-                            <span class="d-none d-sm-block col-3">Referencia-3</span>
-                            <span class="d-none d-sm-block col-2">11.11</span>
-                            <span class="col-4 col-sm-2">9.99</span>
-                            <span class=" col-2 badge badge-light badge-pill">10</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center bg-pal2">
-                            <span class="col-6 col-sm-3">Producto-4</span>
-                            <span class="d-none d-sm-block col-3">Referencia-4</span>
-                            <span class="d-none d-sm-block col-2">11.11</span>
-                            <span class="col-4 col-sm-2">9.99</span>
-                            <span class=" col-2 badge badge-light badge-pill">8</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center bg-pal2">
-                            <span class="col-6 col-sm-3">Producto-5</span>
-                            <span class="d-none d-sm-block col-3">Referencia-5</span>
-                            <span class="d-none d-sm-block col-2">11.11</span>
-                            <span class="col-4 col-sm-2">9.99</span>
-                            <span class=" col-2 badge badge-light badge-pill">9</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Donde Estamos-->
-                <h2 class="border-bottom border-dark my-2">Donde estamos</h2>
-                <div class="d-flex flex-wrap p-2 justify-content-around align-items-center ">
-                    <div class="col-12  col-md-5 card border border-dark rounded bg-pal2 my-2 my-md-0">
-
-                        <div class="card-body">
-                            <h5 class="card-title">Garbag</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Moda Sostenible</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <p class="card-text">C/Pepito de los palotes, Nº 3, bajos.</p>
-                            <a href="#" class="card-link text-dark">About us</a>
-                        </div>
+                        <table class="table bg-pal1">
+                            <thead class=" bg-pal3 ">
+                                <tr>
+                                    <th scope="col">Sel.</th>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Referencia</th>
+                                    <th scope="col">Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody class=" bg-pal2">
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="p1"></th>
+                                    <td>Producto-1</td>
+                                    <td id="p1">Referencia-1</td>
+                                    <td>11.11</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="p2"></th>
+                                    <td>Producto-2</td>
+                                    <td id="p2">Referencia-2</td>
+                                    <td>12.12</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="p3"></th>
+                                    <td>Producto-2</td>
+                                    <td id="p3">Referencia-3</td>
+                                    <td>11.11</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
                     </div>
-                    <div class="col-12 col-md-5  border border-dark rounded my-2 my-md-0 bg-pal2">
-                        <img src="./resources/img/mapa.png" class="align-middle w-100" alt="mapa" />
-
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary"> <a href="chart.html" class="text-light">Buy...</a></button>
                     </div>
-                </div>
-            </div>
-
-
-            <!-- publicidad-->
-            <div class="col-12 col-md-4 p-2 text-center">
-
-                <div class="  w-100 h-100 bg-pal3 p-3">
-                    <h3>Publicidad aquí</h3>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-    <!-- FOOTER -->
-
-
-    <!-- footer -->
-    <footer class="footer bg-pal4 h-footer fixed-bottom d-block d-lg-none ">
-        <div class="container  h-100">
-            <div class="row d-flex justify-content-around text-center align-items-center h-100">
-                <div class="col ">
-                    <!-- <a class="nav-link text-dark" href="chart.html"><i class="fas fa-box fa-2x"></i></a> -->
-                    <a class="nav-link " data-toggle="modal" data-target="#modalChartHead"><i class="fas fa-box fa-2x"></i></a>
-                </div>
-                <div class="col">
-                    <a class="nav-link text-dark" href="#"><i class="fas fa-home fa-2x"></i></a>
-                </div>
-                <div class="col">
-                    <a class="nav-link text-dark" href="register.html"><i class="fas fa-user fa-2x"></i></a>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <!-- Contenedor -->
+        <div class="jumbotron jumbotron-fluid pt-2 bg-pal1 ">
+
+            <!-- Breadcrum -->
+            <nav aria-label="breadcrumb border border-secondary rounded-bottom border-bottom bg-pal2">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+            <!-- Fin breadcrum-->
+            <div class="d-flex p-0 m-0">
+                <!--contenido-->
+                <div class="col-12 col-md-8  p-2">
+                    <!-- Producto destacado-->
+                    <h2 class="border-bottom border-dark ">Productos destacados</h2>
+                    <div class="d-flex p-2">
 
 
-    <script src="resources/js/jquery.min.js"></script>
-    <!-- <script src="resources/js/popper.js"></script> -->
-    <script src="resources/js/bootstrap.bundle.min.js"></script>
-</body>
+                        <!-- Carrusel categoria 1-->
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <h3>Categoria-1</h3>
+                            <div id="carousel1" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel1" data-slide-to="1"></li>
+                                    <li data-target="#carousel1" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+
+                                            <img class="card-img-top" src="https://source.unsplash.com/collections/879042"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Product-1</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+
+                                            <img class="card-img-top" src="https://source.unsplash.com/collections/879042"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Product-2</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+
+                                            <img class="card-img-top" src="https://source.unsplash.com/collections/879042"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Product-3</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Carrusel categoria 2-->
+                        <div class="d-none d-md-block col-md-6 col-lg-4 text-center">
+                            <h3>Categoria-2</h3>
+                            <div id="carousel2" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel2" data-slide-to="1"></li>
+                                    <li data-target="#carousel2" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+
+                                            <img class="card-img-top" src="https://source.unsplash.com/collections/879042"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Product-1</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+
+                                            <img class="card-img-top" src="https://source.unsplash.com/collections/879042"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Product-2</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+                                            <img class="card-img-top" src="https://source.unsplash.com/collections/879042"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Product-3</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Carrusel categoria 3-->
+                        <div class="d-none d-lg-block col-lg-4 text-center">
+                            <h3>Categoria-3</h3>
+                            <div id="carousel3" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel3" data-slide-to="1"></li>
+                                    <li data-target="#carousel3" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+                                            <img class="card-img-top" src="https://source.unsplash.com/collections/879042"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Product-1</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+                                            <img class="card-img-top" src="https://source.unsplash.com/collections/879042"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Product-2</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+                                            <img class="card-img-top" src="https://source.unsplash.com/collections/879042"
+                                                alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Product-3</h5>
+                                                <p class="card-text">Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.</p>
+                                                <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promociones-->
+                    <h2 class=" border-bottom border-dark my-2">Ofertas</h2>
+                    <div class="d-flex p-4">
+                        <ul class="list-group bg-pal1 col-12 p-0">
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-pal3">
+                                <span class="col-6 col-sm-3">Producto</span>
+                                <span class="d-none d-sm-block col-3 ">Referencia</span>
+                                <span class="d-none d-sm-block col-2">Precio</span>
+                                <span class="col-4 col-sm-2">Oferta</span>
+                                <span class="col-2 ">Puntuación</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-pal2">
+                                <span class="col-6 col-sm-3">Producto-2</span>
+                                <span class="d-none d-sm-block col-3">Referencia-2</span>
+                                <span class="d-none d-sm-block col-2">11.11</span>
+                                <span class="col-4 col-sm-2">9.99</span>
+                                <span class=" col-2 badge badge-light badge-pill">6</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-pal2">
+                                <span class="col-6 col-sm-3">Producto-3</span>
+                                <span class="d-none d-sm-block col-3">Referencia-3</span>
+                                <span class="d-none d-sm-block col-2">11.11</span>
+                                <span class="col-4 col-sm-2">9.99</span>
+                                <span class=" col-2 badge badge-light badge-pill">10</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-pal2">
+                                <span class="col-6 col-sm-3">Producto-4</span>
+                                <span class="d-none d-sm-block col-3">Referencia-4</span>
+                                <span class="d-none d-sm-block col-2">11.11</span>
+                                <span class="col-4 col-sm-2">9.99</span>
+                                <span class=" col-2 badge badge-light badge-pill">8</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-pal2">
+                                <span class="col-6 col-sm-3">Producto-5</span>
+                                <span class="d-none d-sm-block col-3">Referencia-5</span>
+                                <span class="d-none d-sm-block col-2">11.11</span>
+                                <span class="col-4 col-sm-2">9.99</span>
+                                <span class=" col-2 badge badge-light badge-pill">9</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Donde Estamos-->
+                    <h2 class="border-bottom border-dark my-2">Donde estamos</h2>
+                    <div class="d-flex flex-wrap p-2 justify-content-around align-items-center ">
+                        <div class="col-12  col-md-5 card border border-dark rounded bg-pal2 my-2 my-md-0">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Garbag</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Moda Sostenible</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <p class="card-text">C/Pepito de los palotes, Nº 3, bajos.</p>
+                                <a href="#" class="card-link text-dark">About us</a>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-5  border border-dark rounded my-2 my-md-0 bg-pal2">
+                            <img src="./resources/img/mapa.png" class="align-middle w-100" alt="mapa" />
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- publicidad-->
+                <div class="col-12 col-md-4 p-2 text-center">
+
+                    <div class="  w-100 h-100 bg-pal3 p-3">
+                        <h3>Publicidad aquí</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- FOOTER -->
+        <!-- FOOTER DESKTOP-->
+        <nav class="navbar justify-content-around align-middle navbar-expand-sm navbar-dark bg-pal4  fixed-bottom pb-3 pb-lg-0">
+            <a class="navbar-brand" href="#">Privacity Policy</a>
+            <div class="d-none d-lg-block bar"></div>
+            <a class="navbar-brand" href="#">Cookies Policy</a>
+            <div class="d-none d-lg-block bar"></div>
+            <a class="navbar-brand" href="#">About Us</a>
+            <div class="d-none d-lg-block bar"></div>
+            <div class="justfy-content-around">
+                <a class="navbar-brand" href="#">
+                    <i class="fab fa-facebook fa-lg"></i>
+                </a>
+                <a class="navbar-brand" href="#">
+                    <i class="fab fa-twitter-square fa-lg"></i>
+                </a>
+                <a class="navbar-brand" href="#">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a class="navbar-brand" href="#">
+                    <i class="fab fa-github-square fa-lg"></i>
+                </a>
+            </div>
+        </nav>
+
+        <!-- footer -->
+        <footer class="footer bg-pal4 h-footer fixed-bottom d-block d-lg-none ">
+            <div class="container  h-100">
+                <div class="row d-flex justify-content-around text-center align-items-center h-100">
+                    <div class="col ">
+                        <!-- <a class="nav-link text-dark" href="chart.html"><i class="fas fa-box fa-2x"></i></a> -->
+                        <a class="nav-link " data-toggle="modal" data-target="#modalChartHead"><i class="fas fa-box fa-2x"></i></a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-link text-dark" href="#"><i class="fas fa-home fa-2x"></i></a>
+                    </div>
+                    <div class="col">
+                        <a class="nav-link text-dark" href="register.html"><i class="fas fa-user fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="resources/js/jquery.min.js"></script>
+        <!-- <script src="resources/js/popper.js"></script> -->
+        <script src="resources/js/bootstrap.bundle.min.js"></script>
+    </body>
 
 </html>
