@@ -134,6 +134,12 @@ body {
   padding-top: 60px;
 }
 
+.bar {
+  height: 90px;
+  border: 1px solid whitesmoke;
+  border-radius: 2px;
+}
+
 /** IPAD */
 @media (max-width: 993.98px) {
   .nav-mvl {
