@@ -1,187 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
+<head>
 
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Sub-category</title>
-        <link rel="shortcut icon" href="./resources/img/bleach.jpg" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="resources/css/bootstrap.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-            crossorigin="anonymous" />
-        <link rel="stylesheet" type="text/css" media="screen" href="resources/scss/styles.scss" />
-    </head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sub-category</title>
+    <link rel="shortcut icon" href="./resources/img/bleach.jpg" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="resources/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" media="screen" href="resources/scss/styles.scss" />
+</head>
 
-    <body>
-        <!-- Cabecera Movil -->
+<body>
+    <!-- Cabecera Movil -->
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-pal4 align-middle justify-content-around nav-mvl fixed-top">
-            <a class="navbar-brand h1 align-middle m-0 mx-lg-2" href="index.html">
-                <img src="https://source.unsplash.com/random" class="d-inline-block align-middle img-logo-mvl" alt="logo" />
-                Garbag
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-pal4 align-middle justify-content-around nav-mvl fixed-top">
+        <a class="navbar-brand h1 align-middle m-0 mx-lg-2" href="index.html">
+            <img src="https://source.unsplash.com/random" class="d-inline-block align-middle img-logo-mvl" alt="logo" /> Garbag
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse  justify-content-end visible" id="navbarSupportedContent">
-                <form class="form-inline my-2 my-lg-0 mx-lg-2">
-                    <input class="form-control my-md-2 input-nav-search" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-dark my-2 my-sm-0 btn-nav" type="submit">
-                        Search
-                    </button>
-                </form>
-
-                <!-- Boton collapse para hacer login -->
-
-                <div class="collapse mx-lg-2" id="loginCollapse">
-                    <div class="card card-body p-1">
-                        <form class="form-inline my-2 my-lg-0 mx-lg-2">
-                            <input class="form-control my-2 input-nav-login" type="search" placeholder="User-Name"
-                                aria-label="Search" />
-                            <input class="form-control  my-2 input-nav-login" type="search" placeholder="Password"
-                                aria-label="Search" />
-                            <button class="btn btn-outline-dark  my-2 my-sm-0  btn-nav" type="submit">
-                                Sign-in
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <button class="btn btn-outline-dark my-2 btn-lg-sm btn-nav" type="button" data-toggle="collapse"
-                    data-target="#loginCollapse" aria-expanded="false" aria-controls="loginCollapse">
-                    Login
+        <div class="collapse navbar-collapse  justify-content-end visible" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0 mx-lg-2">
+                <input class="form-control my-md-2 input-nav-search" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-dark my-2 my-sm-0 btn-nav" type="submit">
+                    Search
                 </button>
-                <!--boton de la cesta solo se muestra en escritorio-->
+            </form>
 
-                <ul class="navbar-nav mr-auto mr-lg-0 d-none d-lg-block">
-                    <li class="nav-item">
-                        <a class="nav-link " data-toggle="modal" data-target="#modalChartHead"><i class="fas fa-box fa-2x"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Cabecera termina aqui -->
+            <!-- Boton collapse para hacer login -->
 
-        <!-- Modal carrito compra-->
-        <div class="modal fade " id="modalChartHead" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content ">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Cesta</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+            <div class="collapse mx-lg-2" id="loginCollapse">
+                <div class="card card-body p-1">
+                    <form class="form-inline my-2 my-lg-0 mx-lg-2">
+                        <input class="form-control my-2 input-nav-login" type="search" placeholder="User-Name" aria-label="Search" />
+                        <input class="form-control  my-2 input-nav-login" type="search" placeholder="Password" aria-label="Search" />
+                        <button class="btn btn-outline-dark  my-2 my-sm-0  btn-nav" type="submit">
+                            Sign-in
                         </button>
-                    </div>
-                    <div class="modal-body d-flex bg-pal1 ">
+                    </form>
+                </div>
+            </div>
+            <button class="btn btn-outline-dark my-2 btn-lg-sm btn-nav" type="button" data-toggle="collapse" data-target="#loginCollapse" aria-expanded="false" aria-controls="loginCollapse">
+                Login
+            </button>
+            <!--boton de la cesta solo se muestra en escritorio-->
 
-                        <table class="table bg-pal1">
-                            <thead class=" bg-pal3 ">
-                                <tr>
-                                    <th scope="col">Sel.</th>
-                                    <th scope="col">Producto</th>
-                                    <th scope="col">Referencia</th>
-                                    <th scope="col">Precio</th>
-                                </tr>
-                            </thead>
-                            <tbody class=" bg-pal2">
-                                <tr>
-                                    <th scope="row"><input type="checkbox" id="p1"></th>
-                                    <td>Producto-1</td>
-                                    <td id="p1">Referencia-1</td>
-                                    <td>11.11</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><input type="checkbox" id="p2"></th>
-                                    <td>Producto-2</td>
-                                    <td id="p2">Referencia-2</td>
-                                    <td>12.12</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><input type="checkbox" id="p3"></th>
-                                    <td>Producto-2</td>
-                                    <td id="p3">Referencia-3</td>
-                                    <td>11.11</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            <ul class="navbar-nav mr-auto mr-lg-0 d-none d-lg-block">
+                <li class="nav-item">
+                    <a class="nav-link " data-toggle="modal" data-target="#modalChartHead"><i class="fas fa-box fa-2x"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Cabecera termina aqui -->
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-secondary"> <a href="chart.html" class="text-light">Buy...</a></button>
-                    </div>
+    <!-- Modal carrito compra-->
+    <div class="modal fade " id="modalChartHead" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cesta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex bg-pal1 ">
+
+                    <table class="table bg-pal1">
+                        <thead class=" bg-pal3 ">
+                            <tr>
+                                <th scope="col">Sel.</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Referencia</th>
+                                <th scope="col">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody class=" bg-pal2">
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="p1"></th>
+                                <td>Producto-1</td>
+                                <td id="p1">Referencia-1</td>
+                                <td>11.11</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="p2"></th>
+                                <td>Producto-2</td>
+                                <td id="p2">Referencia-2</td>
+                                <td>12.12</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="p3"></th>
+                                <td>Producto-2</td>
+                                <td id="p3">Referencia-3</td>
+                                <td>11.11</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary"> <a href="chart.html" class="text-light">Buy...</a></button>
                 </div>
             </div>
         </div>
+    </div>
 
 
 
 
-        <!-- Contenedor -->
-        <div class="jumbotron jumbotron-fluid pt-2 bg-pal1 vh-75">
+    <!-- Contenedor -->
+    <div class="jumbotron jumbotron-fluid pt-2 bg-pal1 vh-75">
 
-            <!-- Breadcrum -->
-            <nav aria-label="breadcrumb border border-secondary rounded-bottom border-bottom bg-pal2">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="category.html">Category</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Sub-Category</li>
-                </ol>
-            </nav>
-            <!-- Fin breadcrum-->
-
-        </div>
-        <!-- FOOTER DESKTOP-->
-        <nav class="navbar justify-content-around align-middle navbar-expand-sm navbar-dark bg-pal4  fixed-bottom pb-3 pb-lg-0">
-            <a class="navbar-brand" href="#">Privacity Policy</a>
-            <div class="d-none d-lg-block bar"></div>
-            <a class="navbar-brand" href="#">Cookies Policy</a>
-            <div class="d-none d-lg-block bar"></div>
-            <a class="navbar-brand" href="#">About Us</a>
-            <div class="d-none d-lg-block bar"></div>
-            <div class="justfy-content-around">
-                <a class="navbar-brand" href="#">
-                    <i class="fab fa-facebook fa-lg"></i>
-                </a>
-                <a class="navbar-brand" href="#">
-                    <i class="fab fa-twitter-square fa-lg"></i>
-                </a>
-                <a class="navbar-brand" href="#">
-                    <i class="fab fa-instagram fa-lg"></i>
-                </a>
-                <a class="navbar-brand" href="#">
-                    <i class="fab fa-github-square fa-lg"></i>
-                </a>
-            </div>
+        <!-- Breadcrum -->
+        <nav aria-label="breadcrumb border border-secondary rounded-bottom border-bottom bg-pal2">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="category.html">Category</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sub-Category</li>
+            </ol>
         </nav>
+        <!-- Fin breadcrum-->
+        <div class="w-100 d-flex pl-5 m-3">
+            <h1>Sub-Categoría</h1>
+        </div>
 
-        <!-- FOOTER -->
-        <footer class="footer bg-pal4 h-footer fixed-bottom d-block d-lg-none ">
-            <div class="container  h-100">
-                <div class="row d-flex justify-content-around text-center align-items-center h-100">
-                    <div class="col ">
-                        <!-- <a class="nav-link text-dark" href="chart.html"><i class="fas fa-box fa-2x"></i></a> -->
-                        <a class="nav-link " data-toggle="modal" data-target="#modalChartHead"><i class="fas fa-box fa-2x"></i></a>
-                    </div>
-                    <div class="col">
-                        <a class="nav-link text-dark" href="index.html"><i class="fas fa-home fa-2x"></i></a>
-                    </div>
-                    <div class="col">
-                        <a class="nav-link text-dark" href="register.html"><i class="fas fa-user fa-2x"></i></a>
-                    </div>
+        <div class="w-100 row d-flex justify-content-around">
+
+
+
+            <!-- Subcategorias y promotores-->
+            <div class="col-10 col-md-4  col-lg-3 d-flex flex-column  ">
+
+                <h3>Filtrar búsqueda</h3>
+                <!-- Desplegables para las diferentes categorias -->
+                <div class=" w-75 m-1">
+                    <form class="pt-3">
+
+                        <h5>Caracteristica-1</h5>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Propiedad-1</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Propiedad-2</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">Propiedad-3</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio4">Propiedad-4</label>
+                        </div>
+
+                        <!-- Segundo conjunto de caracteristicas -->
+                        <h5 class="pt-3">Caracteristica-2</h5>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Propiedad-1</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Propiedad-2</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">Propiedad-3</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio4">Propiedad-4</label>
+                        </div>
+
+                        <!-- Para establecer los precios -->
+                        <h5 class="pt-3">Rango precios</h5>
+                        <div class="input-group mb-3">
+
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Min. $</span>
+                                <span class="input-group-text">0.00</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <div class="input-group-append">
+                                <span class="input-group-text">Max. $</span>
+                                <span class="input-group-text">0.00</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- patrocinadores -->
+                <div class="w-75 text-center p-2">
+                    <h3>Patrocinadores</h3>
+                    <img src="https://source.unsplash.com/random" class="img-patro col-4 " alt="patrocinador-1">
+                    <img src="https://source.unsplash.com/random" class="img-patro col-4 " alt="patrocinador-2">
+                    <img src="https://source.unsplash.com/random" class="img-patro col-4 " alt="patrocinador-3">
+                    <img src="https://source.unsplash.com/random" class="img-patro col-4 " alt="patrocinador-4">
+                    <img src="https://source.unsplash.com/random" class="img-patro col-4 " alt="patrocinador-5">
+                    <img src="https://source.unsplash.com/random" class="img-patro col-4 " alt="patrocinador-6">
                 </div>
             </div>
-        </footer>
 
 
-        <script src="resources/js/jquery.min.js"></script>
-        <!-- <script src="resources/js/popper.js"></script> -->
-        <script src="resources/js/bootstrap.bundle.min.js"></script>
-    </body>
+
+
+
+            <!-- Productos destacados-->
+            <div class="col-10 col-md-8 col-lg-7">
+                <h3>Productos más vendidos:</h3>
+                <table class="table bg-pal1">
+                    <thead class=" bg-pal3 ">
+                        <tr>
+                            <th scope="col-1 " class="text-center">Ordenar por:</th>
+                            <th scope="col-4">Producto</th>
+                            <th scope="col-3">Referencia</th>
+                            <th scope="col-3">Precio</th>
+                            <th scope="col-1"></th>
+                        </tr>
+                    </thead>
+                    <tbody class=" bg-pal2 ">
+                        <tr>
+                            <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                            <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-1</a></td>
+                            <td class="align-middle">Referencia-1</td>
+                            <td class="align-middle">11.11</td>
+                            <td class="align-middle text-right"><button type="button" class="btn btn-secondary"> <a
+                                        href="chart.html" class="text-light">Añadir a la cesta</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                            <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-2</a></td>
+                            <td class="align-middle">Referencia-2</td>
+                            <td class="align-middle">12.12</td>
+                            <td class="align-middle text-right"><button type="button" class="btn btn-secondary"> <a
+                                        href="chart.html" class="text-light">Añadir a la cesta</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                            <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-3</a></td>
+                            <td class="align-middle">Referencia-3</td>
+                            <td class="align-middle">11.11</td>
+                            <td class="align-middle text-right"><button type="button" class="btn btn-secondary"> <a
+                                        href="chart.html" class="text-light">Añadir a la cesta</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                            <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-4</a></td>
+                            <td class="align-middle">Referencia-1</td>
+                            <td class="align-middle">11.11</td>
+                            <td class="align-middle text-right"><button type="button" class="btn btn-secondary"> <a
+                                        href="chart.html" class="text-light">Añadir a la cesta</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                            <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-5</a></td>
+                            <td class="align-middle">Referencia-1</td>
+                            <td class="align-middle">11.11</td>
+                            <td class="align-middle text-right"><button type="button" class="btn btn-secondary"> <a
+                                        href="chart.html" class="text-light">Añadir a la cesta</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                            <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-6</a></td>
+                            <td class="align-middle">Referencia-1</td>
+                            <td class="align-middle">11.11</td>
+                            <td class="align-middle text-right"><button type="button" class="btn btn-secondary"> <a
+                                        href="chart.html" class="text-light">Añadir a la cesta</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                            <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-7</a></td>
+                            <td class="align-middle">Referencia-1</td>
+                            <td class="align-middle">11.11</td>
+                            <td class="align-middle text-right"><button type="button" class="btn btn-secondary"> <a
+                                        href="chart.html" class="text-light">Añadir a la cesta</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                            <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-8</a></td>
+                            <td class="align-middle">Referencia-1</td>
+                            <td class="align-middle">11.11</td>
+                            <td class="align-middle text-right"><button type="button" class="btn btn-secondary"> <a
+                                        href="chart.html" class="text-light">Añadir a la cesta</a></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Pagination -->
+                <nav aria-label="Page navigation example ">
+                    <ul class="pagination justify-content-center ">
+                        <li class="page-item "><a class="page-link text-light bg-pal2" href="#">Previous</a></li>
+                        <li class="page-item "><a class="page-link text-light bg-pal2" href="#">1</a></li>
+                        <li class="page-item "><a class="page-link text-light bg-pal2" href="#">2</a></li>
+                        <li class="page-item "><a class="page-link text-light bg-pal2" href="#">3</a></li>
+                        <li class="page-item "><a class="page-link text-light bg-pal2" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <!-- FOOTER DESKTOP-->
+    <nav class="navbar justify-content-around align-middle navbar-expand-sm navbar-dark bg-pal4  fixed-bottom pb-3 pb-lg-0">
+        <a class="navbar-brand" href="#">Privacity Policy</a>
+        <div class="d-none d-lg-block bar"></div>
+        <a class="navbar-brand" href="#">Cookies Policy</a>
+        <div class="d-none d-lg-block bar"></div>
+        <a class="navbar-brand" href="#">About Us</a>
+        <div class="d-none d-lg-block bar"></div>
+        <div class="justfy-content-around">
+            <a class="navbar-brand" href="#">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+                <i class="fab fa-twitter-square fa-lg"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+                <i class="fab fa-github-square fa-lg"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-pal4 h-footer fixed-bottom d-block d-lg-none ">
+        <div class="container  h-100">
+            <div class="row d-flex justify-content-around text-center align-items-center h-100">
+                <div class="col ">
+                    <!-- <a class="nav-link text-dark" href="chart.html"><i class="fas fa-box fa-2x"></i></a> -->
+                    <a class="nav-link " data-toggle="modal" data-target="#modalChartHead"><i class="fas fa-box fa-2x"></i></a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-dark" href="index.html"><i class="fas fa-home fa-2x"></i></a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-dark" href="register.html"><i class="fas fa-user fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="resources/js/jquery.min.js"></script>
+    <!-- <script src="resources/js/popper.js"></script> -->
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
