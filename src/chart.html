@@ -22,15 +22,15 @@
             <img src="https://source.unsplash.com/random" class="d-inline-block align-middle img-logo-mvl" alt="logo" /> Garbag
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse  justify-content-end visible" id="navbarSupportedContent">
             <form class="form-inline my-2 my-lg-0 mx-lg-2">
                 <input class="form-control my-md-2 input-nav-search" type="search" placeholder="Search" aria-label="Search" />
                 <button class="btn btn-outline-dark my-2 my-sm-0 btn-nav" type="submit">
-                        Search
-                    </button>
+                    Search
+                </button>
             </form>
 
             <!-- Boton collapse para hacer login -->
@@ -41,16 +41,17 @@
                         <input class="form-control my-2 input-nav-login" type="search" placeholder="User-Name" aria-label="Search" />
                         <input class="form-control  my-2 input-nav-login" type="search" placeholder="Password" aria-label="Search" />
                         <button class="btn btn-outline-dark  my-2 my-sm-0  btn-nav" type="submit">
-                                Sign-in
-                            </button>
-                        <button class="btn btn-outline-dark  my-2 my-sm-0  btn-nav" type="button"><a href="register.html" class="text-secondary">Register</a>
-                        </form>
-                    </div>
+                            Sign-in
+                        </button>
+                        <button class="btn btn-outline-dark  my-2 my-sm-0  btn-nav" type="button"><a href="register.html"
+                                class="text-secondary">Register</a>
+                    </form>
                 </div>
-                <button class="btn btn-outline-dark my-2 btn-lg-sm btn-nav" type="button" data-toggle="collapse"
-                    data-target="#loginCollapse" aria-expanded="false" aria-controls="loginCollapse">
-                    Login
-                </button>
+            </div>
+            <button class="btn btn-outline-dark my-2 btn-lg-sm btn-nav" type="button" data-toggle="collapse"
+                data-target="#loginCollapse" aria-expanded="false" aria-controls="loginCollapse">
+                Login
+            </button>
                         <!--boton de la cesta solo se muestra en escritorio-->
 
                         <ul class="navbar-nav mr-auto mr-lg-0 d-none d-lg-block">
@@ -69,8 +70,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Cesta</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body d-flex bg-pal1 ">
 
@@ -127,10 +128,254 @@
             </ol>
         </nav>
         <!-- Fin breadcrum-->
+
+
         <!-- Cesta Compra-->
-        <div class="p-5 d-flex flex-column  ">
-            <h2>Carrito de la compra</h2>
-            <p>Esta página no se ha solicitado para la entrega, solo se ha integrado para que funcionen los enlaces en las diferentes páginas</p>
+        <div class="w-100 d-flex pl-5 m-3">
+            <h1>Cesta de la compra</h1>
+        </div>
+        <!-- Lista compra -->
+        <div class=" col-10 m-auto  p-2">
+            <table class="table bg-pal1 col-10 m-auto ">
+                <thead class=" bg-pal3 ">
+                    <tr>
+                        <th scope="col-1 " class="text-center">Selecciona</th>
+                        <th scope="col-1 " class="text-center">Imagen</th>
+                        <th scope="col-3">Producto</th>
+                        <th scope="col-3">Referencia</th>
+                        <th scope="col-3">Precio</th>
+                        <th scope="col-1 " class="text-center">Unidades</th>
+                    </tr>
+                </thead>
+                <tbody class=" bg-pal2 ">
+                    <tr>
+                        <td class=" text-center align-middle "><input type="checkbox" id="p1"></td>
+                        <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                        <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-1</a></td>
+                        <td class="align-middle" id="p1">Referencia-1</td>
+                        <td class="align-middle">11.11</td>
+                        <td class=" text-center align-middle">1</td>
+                    </tr>
+                    <tr>
+                        <td class=" text-center align-middle "><input type="checkbox" id="p2"></td>
+                        <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                        <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-2</a></td>
+                        <td class="align-middle" id="p2">Referencia-2</td>
+                        <td class="align-middle">12.12</td>
+                        <td class=" text-center align-middle">1</td>
+                    </tr>
+                    <tr>
+                        <td class=" text-center align-middle "><input type="checkbox" id="p3"></td>
+                        <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                        <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-3</a></td>
+                        <td class="align-middle" id="p3">Referencia-3</td>
+                        <td class="align-middle">11.11</td>
+                        <td class=" text-center align-middle">1</td>
+                    </tr>
+                    <tr>
+                        <td class=" text-center align-middle "><input type="checkbox" id="p4"></td>
+                        <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                        <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-4</a></td>
+                        <td class="align-middle" id="p4">Referencia-1</td>
+                        <td class="align-middle">11.11</td>
+                        <td class=" text-center align-middle">1</td>
+                    </tr>
+                    <tr>
+                        <td class=" text-center align-middle "><input type="checkbox" id="p5"></td>
+                        <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                        <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-5</a></td>
+                        <td class="align-middle" id="p5">Referencia-1</td>
+                        <td class="align-middle">11.11</td>
+                        <td class="  text-center align-middle">1</td>
+                    </tr>
+                    <tr>
+                        <td class=" text-center align-middle "><input type="checkbox" id="p6"></td>
+                        <td class=" text-center"><img class="img-list" src="https://source.unsplash.com/random" alt="imagen-producto"></td>
+                        <td class="align-middle"><a class="nav-link text-dark" href="product.html">Producto-6</a></td>
+                        <td class="align-middle" id="p6">Referencia-1</td>
+                        <td class="align-middle">11.11</td>
+                        <td class=" text-center align-middle">1</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-around p-5 flex-wrap">
+                <button type="button" class="btn btn-secondary button-lg w-25">Comprar</button>
+                <button type="button" class="btn btn-secondary button-lg w-25">Eliminar de la Cesta</button>
+            </div>
+        </div>
+
+        <!-- Sugerencias de productos destacados -->
+
+        <div class="col-10 col-md-8  py-3 m-auto">
+            <!-- Producto destacado-->
+            <h2 class="border-bottom border-dark ">Productos destacados</h2>
+            <div class="d-flex p-2">
+
+
+                <!-- Carrusel categoria 1-->
+                <div class="col-12 col-md-6 col-lg-4 text-center">
+                    <h3> <a class="nav-link text-dark" href="category.html">Categoria-1</a></h3>
+                    <div id="carousel1" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel1" data-slide-to="1"></li>
+                            <li data-target="#carousel1" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+
+                                    <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product-1</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+
+                                    <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product-2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+
+                                    <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product-3</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Carrusel categoria 2-->
+                <div class="d-none d-md-block col-md-6 col-lg-4 text-center">
+                    <h3><a class="nav-link text-dark" href="category.html">Categoria-2</a></h3>
+                    <div id="carousel2" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel2" data-slide-to="1"></li>
+                            <li data-target="#carousel2" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+
+                                    <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product-1</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+
+                                    <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product-2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+                                    <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product-3</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Carrusel categoria 3-->
+                <div class="d-none d-lg-block col-lg-4 text-center">
+                    <h3><a class="nav-link text-dark" href="category.html">Categoria-3</a></h3>
+                    <div id="carousel3" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel3" data-slide-to="1"></li>
+                            <li data-target="#carousel3" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+                                    <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product-1</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+                                    <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product-2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card d-block w-100 p-2 border border-dark rounded bg-pal3">
+                                    <img class="card-img-top" src="https://source.unsplash.com/collections/879042" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product-3</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <a href="product.html" class="btn btn-outline-dark">product here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
     <!-- FOOTER DESKTOP-->
