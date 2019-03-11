@@ -1,5 +1,12 @@
 # p4_Bootstrap
 
+Repo con la estructura que quiere el profesor:
+https://github.com/davidgm17/p4_Bootstrap_produccion
+
+Enlace para cargar en el navegador la página:
+https://raw.githack.com/davidgm17/p4_Bootstrap_produccion/master/index.html
+
+
 Develop a Prototype of a Website using Bootstrap 4
 
 ![Bootstrap_4](https://github.com/davidgm17/p4_Bootstrap/blob/master/src/resources/img/bootstrap-logo.png)
